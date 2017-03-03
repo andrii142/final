@@ -12,8 +12,6 @@ public class Controller {
     private HotelDAO hotelDAO = HotelDAOImpl.getHotelDao();
     private RoomDAO roomDAO = RoomDAOImpl.getRoomDAO();
 
-    //test travis
-
 
     public List<Hotel> findHotelByName(String hotelName) {
         return hotelDAO.findByName(hotelName);
